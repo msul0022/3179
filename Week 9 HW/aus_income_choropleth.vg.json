@@ -41,7 +41,8 @@
       "color": {
         "field": "INCOME",
         "type": "quantitative",
-        "scale": {"scheme": "purplebluegreen"}
+        "scale": {"scheme": "greens"},
+        "legend": {"title": "Average Weekly Income"}
       },
       
       "tooltip": [
