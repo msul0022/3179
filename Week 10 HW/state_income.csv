@@ -1,0 +1,406 @@
+﻿Industry, Region,Year-Semester,Income
+ Construction, Australia,2020-S1,1621
+ Construction, Australia,2020-S2,1550.7
+ Construction, Australia,2021-S1,1604.2
+ Construction, Australia,2021-S2,1640.6
+ Construction, Australia,2022-S1,1648.5
+ Construction, Australia,2022-S2,1689.3
+ Construction, Australia,2023-S1,1737.6
+ Construction, Australia,2023-S2,1692.4
+ Construction, Australia,2024-S1,1769.6
+ All Industries, Australia,2020-S1,1268
+ All Industries, Australia,2020-S2,1281.9
+ All Industries, Australia,2021-S1,1305.3
+ All Industries, Australia,2021-S2,1327.6
+ All Industries, Australia,2022-S1,1347.4
+ All Industries, Australia,2022-S2,1376.1
+ All Industries, Australia,2023-S1,1400.6
+ All Industries, Australia,2023-S2,1434.6
+ All Industries, Australia,2024-S1,1479.1
+ Other Services, Australia,2020-S1,1011.1
+ Other Services, Australia,2020-S2,1002.7
+ Other Services, Australia,2021-S1,1034.1
+ Other Services, Australia,2021-S2,1005.1
+ Other Services, Australia,2022-S1,1047
+ Other Services, Australia,2022-S2,1027.5
+ Other Services, Australia,2023-S1,1026.5
+ Other Services, Australia,2023-S2,1039.9
+ Other Services, Australia,2024-S1,1100.5
+" Rental, Hiring and Real Estate Services", Australia,2020-S1,1191.5
+" Rental, Hiring and Real Estate Services", Australia,2020-S2,1262.3
+" Rental, Hiring and Real Estate Services", Australia,2021-S1,1319.1
+" Rental, Hiring and Real Estate Services", Australia,2021-S2,1376.8
+" Rental, Hiring and Real Estate Services", Australia,2022-S1,1334.8
+" Rental, Hiring and Real Estate Services", Australia,2022-S2,1393.6
+" Rental, Hiring and Real Estate Services", Australia,2023-S1,1420
+" Rental, Hiring and Real Estate Services", Australia,2023-S2,1447.4
+" Rental, Hiring and Real Estate Services", Australia,2024-S1,1525.6
+ All Industries, New South Wales,2020-S1,1330.4
+ All Industries, New South Wales,2020-S2,1302
+ All Industries, New South Wales,2021-S1,1340
+ All Industries, New South Wales,2021-S2,1359.3
+ All Industries, New South Wales,2022-S1,1362
+ All Industries, New South Wales,2022-S2,1390.8
+ All Industries, New South Wales,2023-S1,1398.4
+ All Industries, New South Wales,2023-S2,1449.6
+ All Industries, New South Wales,2024-S1,1503.4
+ All Industries, Australia,2020-S1,1304.7
+ All Industries, Australia,2020-S2,1280.3
+ All Industries, Australia,2021-S1,1305.8
+ All Industries, Australia,2021-S2,1328.9
+ All Industries, Australia,2022-S1,1344.7
+ All Industries, Australia,2022-S2,1378.6
+ All Industries, Australia,2023-S1,1399.1
+ All Industries, Australia,2023-S2,1432.6
+ All Industries, Australia,2024-S1,1480.9
+ Health Care and Social Assistance, Australia,2020-S1,1159.3
+ Health Care and Social Assistance, Australia,2020-S2,1166.1
+ Health Care and Social Assistance, Australia,2021-S1,1166.5
+ Health Care and Social Assistance, Australia,2021-S2,1194.1
+ Health Care and Social Assistance, Australia,2022-S1,1215.7
+ Health Care and Social Assistance, Australia,2022-S2,1217
+ Health Care and Social Assistance, Australia,2023-S1,1256.9
+ Health Care and Social Assistance, Australia,2023-S2,1288.6
+ Health Care and Social Assistance, Australia,2024-S1,1358.9
+ All Industries, Australian Capital Territory,2020-S1,1532.5
+ All Industries, Australian Capital Territory,2020-S2,1491.5
+ All Industries, Australian Capital Territory,2021-S1,1500.7
+ All Industries, Australian Capital Territory,2021-S2,1560.9
+ All Industries, Australian Capital Territory,2022-S1,1538.8
+ All Industries, Australian Capital Territory,2022-S2,1580
+ All Industries, Australian Capital Territory,2023-S1,1622.2
+ All Industries, Australian Capital Territory,2023-S2,1663.2
+ All Industries, Australian Capital Territory,2024-S1,1677.1
+ Information Media and Telecommunications, Australia,2020-S1,1763.9
+ Information Media and Telecommunications, Australia,2020-S2,1715.4
+ Information Media and Telecommunications, Australia,2021-S1,1730
+ Information Media and Telecommunications, Australia,2021-S2,1816.4
+ Information Media and Telecommunications, Australia,2022-S1,1863.1
+ Information Media and Telecommunications, Australia,2022-S2,1935.9
+ Information Media and Telecommunications, Australia,2023-S1,1970.3
+ Information Media and Telecommunications, Australia,2023-S2,2064
+ Information Media and Telecommunications, Australia,2024-S1,2046.4
+ All Industries, Northern Territory,2020-S1,1429.1
+ All Industries, Northern Territory,2020-S2,1392.4
+ All Industries, Northern Territory,2021-S1,1383.3
+ All Industries, Northern Territory,2021-S2,1393.1
+ All Industries, Northern Territory,2022-S1,1428.3
+ All Industries, Northern Territory,2022-S2,1456.9
+ All Industries, Northern Territory,2023-S1,1465.8
+ All Industries, Northern Territory,2023-S2,1491
+ All Industries, Northern Territory,2024-S1,1523.9
+ All Industries, Victoria,2020-S1,1296.1
+ All Industries, Victoria,2020-S2,1283.4
+ All Industries, Victoria,2021-S1,1260.9
+ All Industries, Victoria,2021-S2,1294.7
+ All Industries, Victoria,2022-S1,1295.1
+ All Industries, Victoria,2022-S2,1330.6
+ All Industries, Victoria,2023-S1,1376.9
+ All Industries, Victoria,2023-S2,1400.1
+ All Industries, Victoria,2024-S1,1440.7
+ All Industries, Australia,2020-S1,1304.7
+ All Industries, Australia,2020-S2,1280.3
+ All Industries, Australia,2021-S1,1305.8
+ All Industries, Australia,2021-S2,1328.9
+ All Industries, Australia,2022-S1,1344.7
+ All Industries, Australia,2022-S2,1378.6
+ All Industries, Australia,2023-S1,1399.1
+ All Industries, Australia,2023-S2,1432.6
+ All Industries, Australia,2024-S1,1480.9
+ All Industries, New South Wales,2020-S1,1332.5
+ All Industries, New South Wales,2020-S2,1301.2
+ All Industries, New South Wales,2021-S1,1341.6
+ All Industries, New South Wales,2021-S2,1358.9
+ All Industries, New South Wales,2022-S1,1363.4
+ All Industries, New South Wales,2022-S2,1390.7
+ All Industries, New South Wales,2023-S1,1399.6
+ All Industries, New South Wales,2023-S2,1449.6
+ All Industries, New South Wales,2024-S1,1504.6
+ All Industries, Australian Capital Territory,2020-S1,1490.7
+ All Industries, Australian Capital Territory,2020-S2,1494.7
+ All Industries, Australian Capital Territory,2021-S1,1502.4
+ All Industries, Australian Capital Territory,2021-S2,1530.6
+ All Industries, Australian Capital Territory,2022-S1,1543.6
+ All Industries, Australian Capital Territory,2022-S2,1575.4
+ All Industries, Australian Capital Territory,2023-S1,1620.1
+ All Industries, Australian Capital Territory,2023-S2,1656.7
+ All Industries, Australian Capital Territory,2024-S1,1678.9
+ All Industries, Northern Territory,2020-S1,1443.3
+ All Industries, Northern Territory,2020-S2,1381.5
+ All Industries, Northern Territory,2021-S1,1387
+ All Industries, Northern Territory,2021-S2,1387.8
+ All Industries, Northern Territory,2022-S1,1430
+ All Industries, Northern Territory,2022-S2,1460.9
+ All Industries, Northern Territory,2023-S1,1461.8
+ All Industries, Northern Territory,2023-S2,1490.8
+ All Industries, Northern Territory,2024-S1,1524.6
+ All Industries, Tasmania,2020-S1,1076.5
+ All Industries, Tasmania,2020-S2,1089.1
+ All Industries, Tasmania,2021-S1,1122.6
+ All Industries, Tasmania,2021-S2,1131.8
+ All Industries, Tasmania,2022-S1,1163.3
+ All Industries, Tasmania,2022-S2,1196.5
+ All Industries, Tasmania,2023-S1,1207.1
+ All Industries, Tasmania,2023-S2,1234.9
+ All Industries, Tasmania,2024-S1,1255.9
+ All Industries, Victoria,2020-S1,1242.7
+ All Industries, Victoria,2020-S2,1262.7
+ All Industries, Victoria,2021-S1,1269.9
+ All Industries, Victoria,2021-S2,1288.1
+ All Industries, Victoria,2022-S1,1299.9
+ All Industries, Victoria,2022-S2,1331.5
+ All Industries, Victoria,2023-S1,1373.4
+ All Industries, Victoria,2023-S2,1403.2
+ All Industries, Victoria,2024-S1,1438.7
+" Transport, Postal and Warehousing", Australia,2020-S1,1521.1
+" Transport, Postal and Warehousing", Australia,2020-S2,1571.2
+" Transport, Postal and Warehousing", Australia,2021-S1,1551
+" Transport, Postal and Warehousing", Australia,2021-S2,1593
+" Transport, Postal and Warehousing", Australia,2022-S1,1606.2
+" Transport, Postal and Warehousing", Australia,2022-S2,1634
+" Transport, Postal and Warehousing", Australia,2023-S1,1649.9
+" Transport, Postal and Warehousing", Australia,2023-S2,1715.3
+" Transport, Postal and Warehousing", Australia,2024-S1,1756.8
+ Administrative and Support Services, Australia,2020-S1,1113.8
+ Administrative and Support Services, Australia,2020-S2,1053.4
+ Administrative and Support Services, Australia,2021-S1,1081.3
+ Administrative and Support Services, Australia,2021-S2,1147.5
+ Administrative and Support Services, Australia,2022-S1,1175.7
+ Administrative and Support Services, Australia,2022-S2,1218.1
+ Administrative and Support Services, Australia,2023-S1,1259.8
+ Administrative and Support Services, Australia,2023-S2,1236.3
+ Administrative and Support Services, Australia,2024-S1,1274.2
+ All Industries, South Australia,2020-S1,1152.2
+ All Industries, South Australia,2020-S2,1143.4
+ All Industries, South Australia,2021-S1,1194.7
+ All Industries, South Australia,2021-S2,1202.7
+ All Industries, South Australia,2022-S1,1247.1
+ All Industries, South Australia,2022-S2,1255
+ All Industries, South Australia,2023-S1,1259.6
+ All Industries, South Australia,2023-S2,1297.2
+ All Industries, South Australia,2024-S1,1336.6
+" Professional, Scientific and Technical Services", Australia,2020-S1,1714.8
+" Professional, Scientific and Technical Services", Australia,2020-S2,1755.1
+" Professional, Scientific and Technical Services", Australia,2021-S1,1741.2
+" Professional, Scientific and Technical Services", Australia,2021-S2,1747.8
+" Professional, Scientific and Technical Services", Australia,2022-S1,1761.5
+" Professional, Scientific and Technical Services", Australia,2022-S2,1792.1
+" Professional, Scientific and Technical Services", Australia,2023-S1,1859.1
+" Professional, Scientific and Technical Services", Australia,2023-S2,1902.1
+" Professional, Scientific and Technical Services", Australia,2024-S1,1969.8
+ All Industries, Tasmania,2020-S1,1077.7
+ All Industries, Tasmania,2020-S2,1083.2
+ All Industries, Tasmania,2021-S1,1130
+ All Industries, Tasmania,2021-S2,1127
+ All Industries, Tasmania,2022-S1,1161
+ All Industries, Tasmania,2022-S2,1205.2
+ All Industries, Tasmania,2023-S1,1197.7
+ All Industries, Tasmania,2023-S2,1242.2
+ All Industries, Tasmania,2024-S1,1251
+ All Industries, Australian Capital Territory,2020-S1,1534
+ All Industries, Australian Capital Territory,2020-S2,1484.6
+ All Industries, Australian Capital Territory,2021-S1,1500.3
+ All Industries, Australian Capital Territory,2021-S2,1555.3
+ All Industries, Australian Capital Territory,2022-S1,1537.2
+ All Industries, Australian Capital Territory,2022-S2,1575.9
+ All Industries, Australian Capital Territory,2023-S1,1619.8
+ All Industries, Australian Capital Territory,2023-S2,1660.8
+ All Industries, Australian Capital Territory,2024-S1,1674.9
+ All Industries, Queensland,2020-S1,1259.5
+ All Industries, Queensland,2020-S2,1233.2
+ All Industries, Queensland,2021-S1,1266.1
+ All Industries, Queensland,2021-S2,1297.9
+ All Industries, Queensland,2022-S1,1326
+ All Industries, Queensland,2022-S2,1370.4
+ All Industries, Queensland,2023-S1,1390.1
+ All Industries, Queensland,2023-S2,1416.6
+ All Industries, Queensland,2024-S1,1490.2
+ All Industries, Western Australia,2020-S1,1409.4
+ All Industries, Western Australia,2020-S2,1362.2
+ All Industries, Western Australia,2021-S1,1438.8
+ All Industries, Western Australia,2021-S2,1432.9
+ All Industries, Western Australia,2022-S1,1491.5
+ All Industries, Western Australia,2022-S2,1528.2
+ All Industries, Western Australia,2023-S1,1537.1
+ All Industries, Western Australia,2023-S2,1542.3
+ All Industries, Western Australia,2024-S1,1571.5
+ All Industries, South Australia,2020-S1,1143.1
+ All Industries, South Australia,2020-S2,1153.4
+ All Industries, South Australia,2021-S1,1186.8
+ All Industries, South Australia,2021-S2,1209.3
+ All Industries, South Australia,2022-S1,1241.8
+ All Industries, South Australia,2022-S2,1254.7
+ All Industries, South Australia,2023-S1,1263.5
+ All Industries, South Australia,2023-S2,1296.9
+ All Industries, South Australia,2024-S1,1336.2
+ Financial and Insurance Services, Australia,2020-S1,1770
+ Financial and Insurance Services, Australia,2020-S2,1777.5
+ Financial and Insurance Services, Australia,2021-S1,1819.3
+ Financial and Insurance Services, Australia,2021-S2,1858.6
+ Financial and Insurance Services, Australia,2022-S1,1919.6
+ Financial and Insurance Services, Australia,2022-S2,1915.7
+ Financial and Insurance Services, Australia,2023-S1,1889.4
+ Financial and Insurance Services, Australia,2023-S2,1951
+ Financial and Insurance Services, Australia,2024-S1,2041.2
+ All Industries, Western Australia,2020-S1,1409.4
+ All Industries, Western Australia,2020-S2,1362.2
+ All Industries, Western Australia,2021-S1,1438.8
+ All Industries, Western Australia,2021-S2,1432.9
+ All Industries, Western Australia,2022-S1,1491.5
+ All Industries, Western Australia,2022-S2,1528.2
+ All Industries, Western Australia,2023-S1,1537.1
+ All Industries, Western Australia,2023-S2,1542.3
+ All Industries, Western Australia,2024-S1,1571.5
+ Arts and Recreation Services, Australia,2020-S1,1007.6
+ Arts and Recreation Services, Australia,2020-S2,798.8
+ Arts and Recreation Services, Australia,2021-S1,777.4
+ Arts and Recreation Services, Australia,2021-S2,811
+ Arts and Recreation Services, Australia,2022-S1,839.2
+ Arts and Recreation Services, Australia,2022-S2,905.8
+ Arts and Recreation Services, Australia,2023-S1,873.9
+ Arts and Recreation Services, Australia,2023-S2,907.5
+ Arts and Recreation Services, Australia,2024-S1,881.9
+ All Industries, Western Australia,2020-S1,1381.8
+ All Industries, Western Australia,2020-S2,1389.9
+ All Industries, Western Australia,2021-S1,1424.8
+ All Industries, Western Australia,2021-S2,1443.5
+ All Industries, Western Australia,2022-S1,1487.8
+ All Industries, Western Australia,2022-S2,1525.7
+ All Industries, Western Australia,2023-S1,1536.8
+ All Industries, Western Australia,2023-S2,1546.1
+ All Industries, Western Australia,2024-S1,1569.1
+ Wholesale Trade, Australia,2020-S1,1400.1
+ Wholesale Trade, Australia,2020-S2,1401.9
+ Wholesale Trade, Australia,2021-S1,1443.4
+ Wholesale Trade, Australia,2021-S2,1454.1
+ Wholesale Trade, Australia,2022-S1,1456.2
+ Wholesale Trade, Australia,2022-S2,1492.8
+ Wholesale Trade, Australia,2023-S1,1495.4
+ Wholesale Trade, Australia,2023-S2,1554.9
+ Wholesale Trade, Australia,2024-S1,1585.4
+ Mining, Australia,2020-S1,2733.6
+ Mining, Australia,2020-S2,2636.1
+ Mining, Australia,2021-S1,2743.5
+ Mining, Australia,2021-S2,2695.7
+ Mining, Australia,2022-S1,2700.8
+ Mining, Australia,2022-S2,2812.2
+ Mining, Australia,2023-S1,2824
+ Mining, Australia,2023-S2,2899.2
+ Mining, Australia,2024-S1,2975.2
+" Electricity, Gas, Water and Waste Services", Australia,2020-S1,1949.9
+" Electricity, Gas, Water and Waste Services", Australia,2020-S2,1984.1
+" Electricity, Gas, Water and Waste Services", Australia,2021-S1,1951
+" Electricity, Gas, Water and Waste Services", Australia,2021-S2,2032
+" Electricity, Gas, Water and Waste Services", Australia,2022-S1,2104.9
+" Electricity, Gas, Water and Waste Services", Australia,2022-S2,2208
+" Electricity, Gas, Water and Waste Services", Australia,2023-S1,2226.3
+" Electricity, Gas, Water and Waste Services", Australia,2023-S2,2297.2
+" Electricity, Gas, Water and Waste Services", Australia,2024-S1,2280.7
+ Public Administration and Safety, Australia,2020-S1,1605.8
+ Public Administration and Safety, Australia,2020-S2,1644
+ Public Administration and Safety, Australia,2021-S1,1684.6
+ Public Administration and Safety, Australia,2021-S2,1737.4
+ Public Administration and Safety, Australia,2022-S1,1767.8
+ Public Administration and Safety, Australia,2022-S2,1799
+ Public Administration and Safety, Australia,2023-S1,1821.3
+ Public Administration and Safety, Australia,2023-S2,1838.1
+ Public Administration and Safety, Australia,2024-S1,1868
+ Accommodation and Food Services, Australia,2020-S1,591.5
+ Accommodation and Food Services, Australia,2020-S2,579
+ Accommodation and Food Services, Australia,2021-S1,608.3
+ Accommodation and Food Services, Australia,2021-S2,644
+ Accommodation and Food Services, Australia,2022-S1,681.2
+ Accommodation and Food Services, Australia,2022-S2,691.3
+ Accommodation and Food Services, Australia,2023-S1,684.9
+ Accommodation and Food Services, Australia,2023-S2,725
+ Accommodation and Food Services, Australia,2024-S1,772
+ All Industries, Queensland,2020-S1,1255.3
+ All Industries, Queensland,2020-S2,1237
+ All Industries, Queensland,2021-S1,1262.1
+ All Industries, Queensland,2021-S2,1301.5
+ All Industries, Queensland,2022-S1,1323
+ All Industries, Queensland,2022-S2,1373.1
+ All Industries, Queensland,2023-S1,1388.2
+ All Industries, Queensland,2023-S2,1418.3
+ All Industries, Queensland,2024-S1,1489.4
+ All Industries, Victoria,2020-S1,1296.1
+ All Industries, Victoria,2020-S2,1283.4
+ All Industries, Victoria,2021-S1,1260.9
+ All Industries, Victoria,2021-S2,1294.7
+ All Industries, Victoria,2022-S1,1295.1
+ All Industries, Victoria,2022-S2,1330.6
+ All Industries, Victoria,2023-S1,1376.9
+ All Industries, Victoria,2023-S2,1400.1
+ All Industries, Victoria,2024-S1,1440.7
+ Education and Training, Australia,2020-S1,1292.3
+ Education and Training, Australia,2020-S2,1283.6
+ Education and Training, Australia,2021-S1,1318.5
+ Education and Training, Australia,2021-S2,1331.4
+ Education and Training, Australia,2022-S1,1324.3
+ Education and Training, Australia,2022-S2,1361.3
+ Education and Training, Australia,2023-S1,1398.8
+ Education and Training, Australia,2023-S2,1435.6
+ Education and Training, Australia,2024-S1,1439.7
+ Manufacturing, Australia,2020-S1,1381.3
+ Manufacturing, Australia,2020-S2,1458
+ Manufacturing, Australia,2021-S1,1432.8
+ Manufacturing, Australia,2021-S2,1462
+ Manufacturing, Australia,2022-S1,1464.5
+ Manufacturing, Australia,2022-S2,1545.6
+ Manufacturing, Australia,2023-S1,1560.4
+ Manufacturing, Australia,2023-S2,1631.1
+ Manufacturing, Australia,2024-S1,1668.6
+ Retail Trade, Australia,2020-S1,791.8
+ Retail Trade, Australia,2020-S2,750.7
+ Retail Trade, Australia,2021-S1,802.2
+ Retail Trade, Australia,2021-S2,806.9
+ Retail Trade, Australia,2022-S1,792.5
+ Retail Trade, Australia,2022-S2,820.7
+ Retail Trade, Australia,2023-S1,841.4
+ Retail Trade, Australia,2023-S2,864.3
+ Retail Trade, Australia,2024-S1,860.3
+ All Industries, Queensland,2020-S1,1262.4
+ All Industries, Queensland,2020-S2,1232.1
+ All Industries, Queensland,2021-S1,1266
+ All Industries, Queensland,2021-S2,1297
+ All Industries, Queensland,2022-S1,1328.8
+ All Industries, Queensland,2022-S2,1366.9
+ All Industries, Queensland,2023-S1,1390.4
+ All Industries, Queensland,2023-S2,1423.9
+ All Industries, Queensland,2024-S1,1485.5
+ All Industries, Tasmania,2020-S1,1080
+ All Industries, Tasmania,2020-S2,1080.9
+ All Industries, Tasmania,2021-S1,1132.4
+ All Industries, Tasmania,2021-S2,1124.5
+ All Industries, Tasmania,2022-S1,1163.3
+ All Industries, Tasmania,2022-S2,1202.4
+ All Industries, Tasmania,2023-S1,1200
+ All Industries, Tasmania,2023-S2,1239.4
+ All Industries, Tasmania,2024-S1,1253.5
+ All Industries, Northern Territory,2020-S1,1443.3
+ All Industries, Northern Territory,2020-S2,1381.5
+ All Industries, Northern Territory,2021-S1,1387
+ All Industries, Northern Territory,2021-S2,1387.8
+ All Industries, Northern Territory,2022-S1,1430
+ All Industries, Northern Territory,2022-S2,1460.9
+ All Industries, Northern Territory,2023-S1,1461.8
+ All Industries, Northern Territory,2023-S2,1490.8
+ All Industries, Northern Territory,2024-S1,1524.6
+ All Industries, South Australia,2020-S1,1152.2
+ All Industries, South Australia,2020-S2,1143.4
+ All Industries, South Australia,2021-S1,1194.7
+ All Industries, South Australia,2021-S2,1202.7
+ All Industries, South Australia,2022-S1,1247.1
+ All Industries, South Australia,2022-S2,1255
+ All Industries, South Australia,2023-S1,1259.6
+ All Industries, South Australia,2023-S2,1297.2
+ All Industries, South Australia,2024-S1,1336.6
+ All Industries, New South Wales,2020-S1,1313.6
+ All Industries, New South Wales,2020-S2,1318.1
+ All Industries, New South Wales,2021-S1,1337.7
+ All Industries, New South Wales,2021-S2,1357.7
+ All Industries, New South Wales,2022-S1,1366.8
+ All Industries, New South Wales,2022-S2,1386.8
+ All Industries, New South Wales,2023-S1,1404.6
+ All Industries, New South Wales,2023-S2,1449.8
+ All Industries, New South Wales,2024-S1,1503.5
