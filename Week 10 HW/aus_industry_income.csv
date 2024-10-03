@@ -1,163 +1,190 @@
-﻿Industry,Year-Semester,Income
- Construction,2020-S1,1621
- Construction,2020-S2,1551
- Construction,2021-S1,1604
- Construction,2021-S2,1641
- Construction,2022-S1,1649
- Construction,2022-S2,1689
- Construction,2023-S1,1738
- Construction,2023-S2,1692
- Construction,2024-S1,1770
- Other Services,2020-S1,1011
- Other Services,2020-S2,1003
- Other Services,2021-S1,1034
- Other Services,2021-S2,1005
- Other Services,2022-S1,1047
- Other Services,2022-S2,1028
- Other Services,2023-S1,1027
- Other Services,2023-S2,1040
- Other Services,2024-S1,1101
-" Rental, Hiring and Real Estate Services",2020-S1,1192
-" Rental, Hiring and Real Estate Services",2020-S2,1262
-" Rental, Hiring and Real Estate Services",2021-S1,1319
-" Rental, Hiring and Real Estate Services",2021-S2,1377
-" Rental, Hiring and Real Estate Services",2022-S1,1335
-" Rental, Hiring and Real Estate Services",2022-S2,1394
-" Rental, Hiring and Real Estate Services",2023-S1,1420
-" Rental, Hiring and Real Estate Services",2023-S2,1447
-" Rental, Hiring and Real Estate Services",2024-S1,1526
- Health Care and Social Assistance,2020-S1,1159
- Health Care and Social Assistance,2020-S2,1166
- Health Care and Social Assistance,2021-S1,1167
- Health Care and Social Assistance,2021-S2,1194
- Health Care and Social Assistance,2022-S1,1216
- Health Care and Social Assistance,2022-S2,1217
- Health Care and Social Assistance,2023-S1,1257
- Health Care and Social Assistance,2023-S2,1289
- Health Care and Social Assistance,2024-S1,1359
- Information Media and Telecommunications,2020-S1,1764
- Information Media and Telecommunications,2020-S2,1715
- Information Media and Telecommunications,2021-S1,1730
- Information Media and Telecommunications,2021-S2,1816
- Information Media and Telecommunications,2022-S1,1863
- Information Media and Telecommunications,2022-S2,1936
- Information Media and Telecommunications,2023-S1,1970
- Information Media and Telecommunications,2023-S2,2064
- Information Media and Telecommunications,2024-S1,2046
-" Transport, Postal and Warehousing",2020-S1,1521
-" Transport, Postal and Warehousing",2020-S2,1571
-" Transport, Postal and Warehousing",2021-S1,1551
-" Transport, Postal and Warehousing",2021-S2,1593
-" Transport, Postal and Warehousing",2022-S1,1606
-" Transport, Postal and Warehousing",2022-S2,1634
-" Transport, Postal and Warehousing",2023-S1,1650
-" Transport, Postal and Warehousing",2023-S2,1715
-" Transport, Postal and Warehousing",2024-S1,1757
- Administrative and Support Services,2020-S1,1114
- Administrative and Support Services,2020-S2,1053
- Administrative and Support Services,2021-S1,1081
- Administrative and Support Services,2021-S2,1148
- Administrative and Support Services,2022-S1,1176
- Administrative and Support Services,2022-S2,1218
- Administrative and Support Services,2023-S1,1260
- Administrative and Support Services,2023-S2,1236
- Administrative and Support Services,2024-S1,1274
-" Professional, Scientific and Technical Services",2020-S1,1715
-" Professional, Scientific and Technical Services",2020-S2,1755
-" Professional, Scientific and Technical Services",2021-S1,1741
-" Professional, Scientific and Technical Services",2021-S2,1748
-" Professional, Scientific and Technical Services",2022-S1,1762
-" Professional, Scientific and Technical Services",2022-S2,1792
-" Professional, Scientific and Technical Services",2023-S1,1859
-" Professional, Scientific and Technical Services",2023-S2,1902
-" Professional, Scientific and Technical Services",2024-S1,1970
- Financial and Insurance Services,2020-S1,1770
- Financial and Insurance Services,2020-S2,1778
- Financial and Insurance Services,2021-S1,1819
- Financial and Insurance Services,2021-S2,1859
- Financial and Insurance Services,2022-S1,1920
- Financial and Insurance Services,2022-S2,1916
- Financial and Insurance Services,2023-S1,1889
- Financial and Insurance Services,2023-S2,1951
- Financial and Insurance Services,2024-S1,2041
- Arts and Recreation Services,2020-S1,1008
- Arts and Recreation Services,2020-S2,799
- Arts and Recreation Services,2021-S1,777
- Arts and Recreation Services,2021-S2,811
- Arts and Recreation Services,2022-S1,839
- Arts and Recreation Services,2022-S2,906
- Arts and Recreation Services,2023-S1,874
- Arts and Recreation Services,2023-S2,908
- Arts and Recreation Services,2024-S1,882
- Wholesale Trade,2020-S1,1400
- Wholesale Trade,2020-S2,1402
- Wholesale Trade,2021-S1,1443
- Wholesale Trade,2021-S2,1454
- Wholesale Trade,2022-S1,1456
- Wholesale Trade,2022-S2,1493
- Wholesale Trade,2023-S1,1495
- Wholesale Trade,2023-S2,1555
- Wholesale Trade,2024-S1,1585
- Mining,2020-S1,2734
- Mining,2020-S2,2636
- Mining,2021-S1,2744
- Mining,2021-S2,2696
- Mining,2022-S1,2701
- Mining,2022-S2,2812
- Mining,2023-S1,2824
- Mining,2023-S2,2899
- Mining,2024-S1,2975
-" Electricity, Gas, Water and Waste Services",2020-S1,1950
-" Electricity, Gas, Water and Waste Services",2020-S2,1984
-" Electricity, Gas, Water and Waste Services",2021-S1,1951
-" Electricity, Gas, Water and Waste Services",2021-S2,2032
-" Electricity, Gas, Water and Waste Services",2022-S1,2105
-" Electricity, Gas, Water and Waste Services",2022-S2,2208
-" Electricity, Gas, Water and Waste Services",2023-S1,2226
-" Electricity, Gas, Water and Waste Services",2023-S2,2297
-" Electricity, Gas, Water and Waste Services",2024-S1,2281
- Public Administration and Safety,2020-S1,1606
- Public Administration and Safety,2020-S2,1644
- Public Administration and Safety,2021-S1,1685
- Public Administration and Safety,2021-S2,1737
- Public Administration and Safety,2022-S1,1768
- Public Administration and Safety,2022-S2,1799
- Public Administration and Safety,2023-S1,1821
- Public Administration and Safety,2023-S2,1838
- Public Administration and Safety,2024-S1,1868
- Accommodation and Food Services,2020-S1,592
- Accommodation and Food Services,2020-S2,579
- Accommodation and Food Services,2021-S1,608
- Accommodation and Food Services,2021-S2,644
- Accommodation and Food Services,2022-S1,681
- Accommodation and Food Services,2022-S2,691
- Accommodation and Food Services,2023-S1,685
- Accommodation and Food Services,2023-S2,725
- Accommodation and Food Services,2024-S1,772
- Education and Training,2020-S1,1292
- Education and Training,2020-S2,1284
- Education and Training,2021-S1,1319
- Education and Training,2021-S2,1331
- Education and Training,2022-S1,1324
- Education and Training,2022-S2,1361
- Education and Training,2023-S1,1399
- Education and Training,2023-S2,1436
- Education and Training,2024-S1,1440
- Manufacturing,2020-S1,1381
- Manufacturing,2020-S2,1458
- Manufacturing,2021-S1,1433
- Manufacturing,2021-S2,1462
- Manufacturing,2022-S1,1465
- Manufacturing,2022-S2,1546
- Manufacturing,2023-S1,1560
- Manufacturing,2023-S2,1631
- Manufacturing,2024-S1,1669
- Retail Trade,2020-S1,792
- Retail Trade,2020-S2,751
- Retail Trade,2021-S1,802
- Retail Trade,2021-S2,807
- Retail Trade,2022-S1,793
- Retail Trade,2022-S2,821
- Retail Trade,2023-S1,841
- Retail Trade,2023-S2,864
- Retail Trade,2024-S1,860
+﻿Industry,Year,Income
+ Construction,2020,1621
+ Construction,2020,1551
+ Construction,2021,1604
+ Construction,2021,1641
+ Construction,2022,1649
+ Construction,2022,1689
+ Construction,2023,1738
+ Construction,2023,1692
+ Construction,2024,1770
+ All Industries,2020,1268
+ All Industries,2020,1282
+ All Industries,2021,1305
+ All Industries,2021,1328
+ All Industries,2022,1347
+ All Industries,2022,1376
+ All Industries,2023,1401
+ All Industries,2023,1435
+ All Industries,2024,1479
+ Other Services,2020,1011
+ Other Services,2020,1003
+ Other Services,2021,1034
+ Other Services,2021,1005
+ Other Services,2022,1047
+ Other Services,2022,1028
+ Other Services,2023,1027
+ Other Services,2023,1040
+ Other Services,2024,1101
+" Rental, Hiring and Real Estate Services",2020,1192
+" Rental, Hiring and Real Estate Services",2020,1262
+" Rental, Hiring and Real Estate Services",2021,1319
+" Rental, Hiring and Real Estate Services",2021,1377
+" Rental, Hiring and Real Estate Services",2022,1335
+" Rental, Hiring and Real Estate Services",2022,1394
+" Rental, Hiring and Real Estate Services",2023,1420
+" Rental, Hiring and Real Estate Services",2023,1447
+" Rental, Hiring and Real Estate Services",2024,1526
+ All Industries,2020,1305
+ All Industries,2020,1280
+ All Industries,2021,1306
+ All Industries,2021,1329
+ All Industries,2022,1345
+ All Industries,2022,1379
+ All Industries,2023,1399
+ All Industries,2023,1433
+ All Industries,2024,1481
+ Health Care and Social Assistance,2020,1159
+ Health Care and Social Assistance,2020,1166
+ Health Care and Social Assistance,2021,1167
+ Health Care and Social Assistance,2021,1194
+ Health Care and Social Assistance,2022,1216
+ Health Care and Social Assistance,2022,1217
+ Health Care and Social Assistance,2023,1257
+ Health Care and Social Assistance,2023,1289
+ Health Care and Social Assistance,2024,1359
+ Information Media and Telecommunications,2020,1764
+ Information Media and Telecommunications,2020,1715
+ Information Media and Telecommunications,2021,1730
+ Information Media and Telecommunications,2021,1816
+ Information Media and Telecommunications,2022,1863
+ Information Media and Telecommunications,2022,1936
+ Information Media and Telecommunications,2023,1970
+ Information Media and Telecommunications,2023,2064
+ Information Media and Telecommunications,2024,2046
+ All Industries,2020,1305
+ All Industries,2020,1280
+ All Industries,2021,1306
+ All Industries,2021,1329
+ All Industries,2022,1345
+ All Industries,2022,1379
+ All Industries,2023,1399
+ All Industries,2023,1433
+ All Industries,2024,1481
+" Transport, Postal and Warehousing",2020,1521
+" Transport, Postal and Warehousing",2020,1571
+" Transport, Postal and Warehousing",2021,1551
+" Transport, Postal and Warehousing",2021,1593
+" Transport, Postal and Warehousing",2022,1606
+" Transport, Postal and Warehousing",2022,1634
+" Transport, Postal and Warehousing",2023,1650
+" Transport, Postal and Warehousing",2023,1715
+" Transport, Postal and Warehousing",2024,1757
+ Administrative and Support Services,2020,1114
+ Administrative and Support Services,2020,1053
+ Administrative and Support Services,2021,1081
+ Administrative and Support Services,2021,1148
+ Administrative and Support Services,2022,1176
+ Administrative and Support Services,2022,1218
+ Administrative and Support Services,2023,1260
+ Administrative and Support Services,2023,1236
+ Administrative and Support Services,2024,1274
+" Professional, Scientific and Technical Services",2020,1715
+" Professional, Scientific and Technical Services",2020,1755
+" Professional, Scientific and Technical Services",2021,1741
+" Professional, Scientific and Technical Services",2021,1748
+" Professional, Scientific and Technical Services",2022,1762
+" Professional, Scientific and Technical Services",2022,1792
+" Professional, Scientific and Technical Services",2023,1859
+" Professional, Scientific and Technical Services",2023,1902
+" Professional, Scientific and Technical Services",2024,1970
+ Financial and Insurance Services,2020,1770
+ Financial and Insurance Services,2020,1778
+ Financial and Insurance Services,2021,1819
+ Financial and Insurance Services,2021,1859
+ Financial and Insurance Services,2022,1920
+ Financial and Insurance Services,2022,1916
+ Financial and Insurance Services,2023,1889
+ Financial and Insurance Services,2023,1951
+ Financial and Insurance Services,2024,2041
+ Arts and Recreation Services,2020,1008
+ Arts and Recreation Services,2020,799
+ Arts and Recreation Services,2021,777
+ Arts and Recreation Services,2021,811
+ Arts and Recreation Services,2022,839
+ Arts and Recreation Services,2022,906
+ Arts and Recreation Services,2023,874
+ Arts and Recreation Services,2023,908
+ Arts and Recreation Services,2024,882
+ Wholesale Trade,2020,1400
+ Wholesale Trade,2020,1402
+ Wholesale Trade,2021,1443
+ Wholesale Trade,2021,1454
+ Wholesale Trade,2022,1456
+ Wholesale Trade,2022,1493
+ Wholesale Trade,2023,1495
+ Wholesale Trade,2023,1555
+ Wholesale Trade,2024,1585
+ Mining,2020,2734
+ Mining,2020,2636
+ Mining,2021,2744
+ Mining,2021,2696
+ Mining,2022,2701
+ Mining,2022,2812
+ Mining,2023,2824
+ Mining,2023,2899
+ Mining,2024,2975
+" Electricity, Gas, Water and Waste Services",2020,1950
+" Electricity, Gas, Water and Waste Services",2020,1984
+" Electricity, Gas, Water and Waste Services",2021,1951
+" Electricity, Gas, Water and Waste Services",2021,2032
+" Electricity, Gas, Water and Waste Services",2022,2105
+" Electricity, Gas, Water and Waste Services",2022,2208
+" Electricity, Gas, Water and Waste Services",2023,2226
+" Electricity, Gas, Water and Waste Services",2023,2297
+" Electricity, Gas, Water and Waste Services",2024,2281
+ Public Administration and Safety,2020,1606
+ Public Administration and Safety,2020,1644
+ Public Administration and Safety,2021,1685
+ Public Administration and Safety,2021,1737
+ Public Administration and Safety,2022,1768
+ Public Administration and Safety,2022,1799
+ Public Administration and Safety,2023,1821
+ Public Administration and Safety,2023,1838
+ Public Administration and Safety,2024,1868
+ Accommodation and Food Services,2020,592
+ Accommodation and Food Services,2020,579
+ Accommodation and Food Services,2021,608
+ Accommodation and Food Services,2021,644
+ Accommodation and Food Services,2022,681
+ Accommodation and Food Services,2022,691
+ Accommodation and Food Services,2023,685
+ Accommodation and Food Services,2023,725
+ Accommodation and Food Services,2024,772
+ Education and Training,2020,1292
+ Education and Training,2020,1284
+ Education and Training,2021,1319
+ Education and Training,2021,1331
+ Education and Training,2022,1324
+ Education and Training,2022,1361
+ Education and Training,2023,1399
+ Education and Training,2023,1436
+ Education and Training,2024,1440
+ Manufacturing,2020,1381
+ Manufacturing,2020,1458
+ Manufacturing,2021,1433
+ Manufacturing,2021,1462
+ Manufacturing,2022,1465
+ Manufacturing,2022,1546
+ Manufacturing,2023,1560
+ Manufacturing,2023,1631
+ Manufacturing,2024,1669
+ Retail Trade,2020,792
+ Retail Trade,2020,751
+ Retail Trade,2021,802
+ Retail Trade,2021,807
+ Retail Trade,2022,793
+ Retail Trade,2022,821
+ Retail Trade,2023,841
+ Retail Trade,2023,864
+ Retail Trade,2024,860
