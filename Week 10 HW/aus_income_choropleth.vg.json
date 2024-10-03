@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Income",
+    "width": 800,
+    "height": 400,
+    "params":[
+      {
+        "name": "year_selection",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 2020,
+          "max": 2024,
+          "step": 1,
+          "name": "Year: "
+        }
+      }
+    ],
+    "projection": {"type": "equirectangular"},
+    "data": {
+            "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%209%20HW/clean_income.csv"
+          },
+    "transform": [
+      {
+        "lookup": "STATE",
+        "from": {
+          "data": {
+      "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%209%20HW/aus.topojson",
+      "format": {"type": "topojson", "feature": "2"}
+          },
+          "key": "properties.name",
+          "fields": ["properties", "type", "geometry"]
+        }
+      },
+      {"filter": "datum.YEAR == year_selection"}
+    ],
+    
+    "mark": {"type": "geoshape"},
+    
+    "encoding": {
+      "color": {
+        "field": "INCOME",
+        "type": "quantitative",
+        "scale": {"scheme": "purplebluegreen"}
+      },
+      
+      "tooltip": [
+        {
+          "field": "properties.name", "type": "nominal", "title": "STATE"
+        },
+        {
+          "field": "INCOME", "type": "quantitative"
+        },
+        {
+          "field": "YEAR", "type": "quantitative"
+        }
+      ]
+    }
+  }
