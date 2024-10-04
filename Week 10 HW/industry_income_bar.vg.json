@@ -1,56 +1,67 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%2010%20HW/aus_industry_income.csv"},
-    "params":[
-      {
-        "name": "year_selection",
-        "value": 2023,
-        "bind": {
-          "input": "range",
-          "min": 2020,
-          "max": 2024,
-          "step": 1,
-          "name": "Year: "
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%2010%20HW/aus_industry_income.csv"},
+  "params":[
+    {
+      "name": "year_selection",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2020,
+        "max": 2024,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum['Year'] == year_selection"},
+    {
+      "joinaggregate": [{
+        "op": "mean",
+        "field": "Income",
+        "as": "AverageIncome"
+      }]
+    }
+  ],
+  "layer": [
+    {
+      "mark": "bar",
+      "transform": [
+        {"calculate": "toString('$' + datum.Income)", "as": "Dollars"}
+      ],
+      "encoding": {
+        "x": {
+          "field": "Income", "type": "quantitative",
+          "title": "Income"
+        },
+        "y": {"field": "Industry", "type": "ordinal"},
+        "tooltip": [
+              {"field": "Dollars", "type": "nominal"},
+              {"field": "Industry", "type": "ordinal"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "red"},
+      "encoding": {
+        "x": {
+          "aggregate": "average",
+          "field": "AverageIncome",
+          "type": "quantitative"
         }
       }
-    ],
-    "transform": [
-      {"filter": "datum['Year'] == year_selection"},
-      {
-        "joinaggregate": [{
-          "op": "mean",
-          "field": "Income",
-          "as": "AverageIncome"
-        }]
-      }
-    ],
-    "layer": [
-      {
-        "mark": "bar",
-        "transform": [
-          {"calculate": "toString('$' + datum.Income)", "as": "Dollars"}
-        ],
-        "encoding": {
-          "x": {
-            "field": "Income", "type": "quantitative",
-            "title": "Income"
-          },
-          "y": {"field": "Industry", "type": "ordinal"},
-          "tooltip": [
-                {"field": "Dollars", "type": "nominal"},
-                {"field": "Industry", "type": "ordinal"}
-          ]
-        }
-      },
-      {
-        "mark": {"type": "rule", "color": "red"},
-        "encoding": {
-          "x": {
-            "aggregate": "average",
-            "field": "AverageIncome",
-            "type": "quantitative"
-          }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "yOffset": -150, "xOffset": 5, "color": "red"},
+      "encoding": {
+        "text": {"value": "Average Weekly Income"},
+        "x": {
+          "aggregate": "average",
+          "field": "AverageIncome",
+          "type": "quantitative"
         }
       }
-    ]
-  }
+    }
+  ]
+}
