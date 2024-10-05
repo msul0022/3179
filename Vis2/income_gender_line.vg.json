@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/income_by_gender.csv"},
+  "mark": {
+    "type": "line"
+  },
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal"},
+    "y": {"field": "Income", "type": "quantitative"},
+    "color": {"field": "Sex", "type": "nominal"}
+  }
+}
