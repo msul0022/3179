@@ -1,12 +1,12 @@
 State,Dollars,Type,Percent_Average
-ACT,66.3,Basket,100.30
-NSW,66.38,Basket,100.42
-NT,65.64,Basket,99.30
-QLD,66.3,Basket,100.30
-SA,65.4,Basket,98.94
-TAS,64.9,Basket,98.18
-VIC,66.28,Basket,100.27
-WA,67.63,Basket,102.31
+ACT,68.76,Basket,100.88
+NSW,65.32,Basket,95.83
+NT,79.47,Basket,116.59
+QLD,65.01,Basket,95.38
+SA,65.25,Basket,95.73
+TAS,69.44,Basket,101.88
+VIC,65.64,Basket,96.30
+WA,66.39,Basket,97.40
 ACT,1676.97,Income,113.75
 NSW,1503.83,Income,102.00
 NT,1524.37,Income,103.40
@@ -14,4 +14,4 @@ QLD,1488.37,Income,100.96
 SA,1336.47,Income,90.65
 TAS,1253.47,Income,85.02
 VIC,1440.03,Income,97.68
-WA,1570.7,Income,106.54
+WA,1570.70,Income,106.54
