@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart with negative values. We can hide the axis domain line, and instead use a conditional grid color to draw a zero baseline.",
+  "data": { "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/age.csv"
+  },
+  
+  "params": [
+    {
+      "name": "choose_type",
+      "value": ["Full-time"],
+      "bind": {
+        "input": "select",
+        "options": [
+          ["Full-time"],
+          ["Part-time"]
+        ],
+        "labels": ["Full-time", "Part-time"],
+        "name": "Type of Work: "
+      }
+    }
+  ],
+
+  "mark": "bar",
+  "transform": [
+    {"filter": "datum['Work_Type'] == choose_type"},
+    {
+      "joinaggregate": [{
+        "op": "mean",
+        "field": "Weekly_Income",
+        "as": "avg_income"
+      }]
+    },
+    {"calculate": "datum.Weekly_Income-datum.avg_income", "as": "difference"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "Age", "type": "nominal",
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelAngle": 0,
+        "labelPadding": 4
+      }
+    },
+    "y": {
+      "field": "difference", "type": "quantitative",
+      "axis": {
+        "gridColor": {
+          "condition": {"test": "datum.value === 0", "value": "black"},
+          "value": "#ddd"
+        }
+      }
+    },
+    "color": {
+      "condition": {"test": "datum['difference'] > 0", "value": "green"}, "value": "red"
+    }
+  }
+}
