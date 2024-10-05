@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Comparison pyramid of basket price and income.",
+  "data": { "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/basket.csv"},
+
+  "spacing": 0,
+  "hconcat": [{
+    "transform": [{
+      "filter": {"field": "Type", "equal": "Basket"}
+    }],
+    "title": "Basket",
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "State", "axis": null
+      },
+      "x": {
+        "aggregate": "sum", "field": "Dollars",
+        "title": "Dollars",
+        "axis": {"format": "s"},
+        "sort": "descending"
+      },
+      "color": {
+        "field": "Type",
+        "scale": {"range": ["#675193", "#ca8861"]},
+        "legend": null
+      }
+    }
+  }, {
+    "width": 20,
+    "view": {"stroke": null},
+    "mark": {
+      "type": "text",
+      "align": "center"
+    },
+    "encoding": {
+      "y": {"field": "State", "type": "nominal", "axis": null},
+      "text": {"field": "State", "type": "nominal"}
+    }
+  }, {
+    "transform": [{
+      "filter": {"field": "Type", "equal": "Income"}
+    }],
+    "title": "Income",
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "State", "title": null,
+        "axis": null
+      },
+      "x": {
+        "aggregate": "sum", "field": "Dollars",
+        "title": "Dollars",
+        "axis": {"format": "s"}
+      },
+      "color": {
+        "field": "Type",
+        "legend": null
+      }
+    }
+  }],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"grid": false}
+  }
+}
