@@ -1,6 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A bar chart with negative values. We can hide the axis domain line, and instead use a conditional grid color to draw a zero baseline.",
+  "width": "container",
   "data": { "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/age.csv"
   },
   
