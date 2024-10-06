@@ -32,7 +32,7 @@
     "color": {
       "field": "Sex",
       "type": "nominal",
-      "scale": {"domain": ["Male", "Female", "All"], "range": ["#1A3B8E", "#F08080", "#F47920"]}
+      "scale": {"domain": ["Male", "Female", "All"], "range": ["#1A3B8E", "#F08080", "#FFD200"]}
     },
     "tooltip": [
       {"field": "Date", "type": "temporal"},
