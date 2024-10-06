@@ -38,11 +38,12 @@
     "mark": {"type": "geoshape"},
     
     "encoding": {
-      "color": {
+      "fill": {
         "field": "INCOME",
         "type": "quantitative",
-        "scale": {"scheme": "greens"},
-        "legend": {"title": "Average Weekly Income"}
+        "title": "Average Weekly Income",
+        "legend": {"orient": "top-left"},
+        "scale": {"scheme": "greens"}
       },
       
       "tooltip": [
