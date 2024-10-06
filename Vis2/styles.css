@@ -1,3 +1,72 @@
 body {
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Verdana', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.page {
+    width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: "Verdana";
+    font-weight: 900;
+    color: #9d1c7e;
+
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #9d1c7e;
+    background-color: #f0f0f0;
+    padding: 5px;
+    font-family: "Verdana";
+}
+
+h3 {
+    font-size: 1em;
+    font-family: "Verdana";
+    color: black;
+
+}
+
+.newspaper {
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-width: 0.5;
+    column-rule-color: #f0f0f0;
+    padding-bottom: 50px;
+}
+
+.vis-container {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.pure-g {
+    margin-bottom: 25px;
+}
+
+.description-right {
+    padding-right: 10px;
+    padding-left: 50px;
+}
+
+.description-left {
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+.footer {
+    font-size: 1em;
+    text-align: center;
+    color: #6c696b;
+    padding: 5px;
+    font-family: "Verdana";
 }
