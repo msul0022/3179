@@ -13,7 +13,7 @@
 
 <body>
     <h1>
-        Week 10 Homework
+        Australian Weekly Income
     </h1>
     <div id = "container">
         <div id = "bar">
@@ -23,6 +23,14 @@
         <br>
         <div id = "choropleth">
         </div>
+        <br>
+        <br>
+        <br>
+        <div id = "pyramid">
+        </div>
+        <br>
+        <br>
+        <br>
     </div>
 
     <script type="text/javascript">
@@ -34,6 +42,11 @@
 
         var vg_2 = "industry_income_bar.vg.json";
         vegaEmbed("#bar", vg_2).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_3 = "basket.vg.json";
+        vegaEmbed("#pyramid, vg_3).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
