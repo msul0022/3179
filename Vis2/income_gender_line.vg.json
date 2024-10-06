@@ -1,12 +1,42 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Weekly Income by Gender",
   "data": {"url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/income_by_gender.csv"},
-  "mark": {
-    "type": "line"
+  
+  "config": {
+    "legend": {
+      "labelFont": "calibri",
+      "titleFont": "calibri",
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "calibri",
+      "titleFont": "calibri",
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "mark": {"font": "calibri"}
   },
+  
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "transform": [
+    {"calculate": "toString('$' + datum.Income)", "as": "Dollars"}
+  ],
   "encoding": {
     "x": {"field": "Date", "type": "temporal"},
     "y": {"field": "Income", "type": "quantitative"},
-    "color": {"field": "Sex", "type": "nominal"}
+    "color": {
+      "field": "Sex",
+      "type": "nominal",
+      "scale": {"domain": ["Male", "Female", "All"], "range": ["#1A3B8E", "#F08080", "#F47920"]}
+    },
+    "tooltip": [
+      {"field": "Date", "type": "temporal"},
+      {"field": "Dollars", "type": "nominal"}
+    ]
   }
 }
