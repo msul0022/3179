@@ -53,7 +53,16 @@
       }
     },
     "color": {
-      "condition": {"test": "datum['difference'] > 0", "value": "green"}, "value": "red"
-    }
+      "condition": {"test": "datum['difference'] > 0", "value": "#4BA962"}, "value": "#CC2031"
+    },
+
+    "tooltip": [
+        {
+          "field": "difference", "type": "quantitative", "title": "Difference from Average:", "format": ".2f"
+        },
+        {
+          "field": "Age", "type": "nominal", "title": "Age Range:"
+        }
+      ]
   }
 }
