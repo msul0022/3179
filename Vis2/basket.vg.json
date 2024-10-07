@@ -1,82 +1,113 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Comparison pyramid of basket price and income.",
-  "data": { "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/basket.csv"},
-
+  "data": {
+    "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/basket.csv"
+  },
   "spacing": 0,
-  "hconcat": [{
-    "transform": [{
-      "filter": {"field": "Type", "equal": "Basket"}
-    }],
-    "mark": "bar",
-    "encoding": {
-      "y": {
-        "field": "State", "axis": null
-      },
-      "x": {
-        "aggregate": "sum", "field": "Dollars",
-        "title": "Average Basket of Groceries ($)",
-        "axis": {"format": "s"},
-        "sort": "descending"
-      },
-      "color": {
-        "field": "Type",
-        "scale": {"range": ["#675193", "#4BA962"]},
-        "legend": null
-      },
-      "tooltip": [
+  "hconcat": [
+    {
+      "transform": [{"filter": {"field": "Type", "equal": "Basket"}}],
+      "layer": [
         {
-          "field": "Dollars", "type": "quantitative", "title": "Dollars:", "format": "$,.2f"
+          "mark": {"type": "bar"},
+          "encoding": {
+            "y": {"field": "State", "axis": null},
+            "x": {
+              "aggregate": "sum",
+              "field": "Dollars",
+              "title": "Average Basket of Groceries ($)",
+              "axis": {"format": "s"},
+              "sort": "descending"
+            },
+            "color": {
+              "field": "Type",
+              "scale": {"range": ["#FFD200", "#4BA962"]},
+              "legend": null
+            },
+            "tooltip": [
+              {
+                "field": "Dollars",
+                "type": "quantitative",
+                "title": "Dollars:",
+                "format": "$,.2f"
+              },
+              {"field": "State", "type": "nominal", "title": "State:"}
+            ]
+          }
         },
         {
-          "field": "State", "type": "nominal", "title": "State:"
+          "mark": {"type": "rule", "color": "#B00180"},
+          "encoding": {"x": {"datum": 68.16}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "yOffset": -90,
+            "xOffset": 0,
+            "color": "#B00180"
+          },
+          "encoding": {
+            "text": {"value": "Average Basket"},
+            "x": {"datum": 68.16}
+          }
         }
       ]
-    }
-  }, {
-    "width": 20,
-    "view": {"stroke": null},
-    "mark": {
-      "type": "text",
-      "align": "center"
     },
-    "encoding": {
-      "y": {"field": "State", "type": "nominal", "axis": null},
-      "text": {"field": "State", "type": "nominal"}
-    }
-  }, {
-    "transform": [{
-      "filter": {"field": "Type", "equal": "Income"}
-    }],
-    "mark": "bar",
-    "encoding": {
-      "y": {
-        "field": "State", "title": null,
-        "axis": null
-      },
-      "x": {
-        "aggregate": "sum", "field": "Dollars",
-        "title": "Average Weekly Income ($)",
-        "axis": {"format": "s"}
-      },
-      "color": {
-        "field": "Type",
-        "legend": null
-      },
-
-      "tooltip": [
+    {
+      "width": 20,
+      "view": {"stroke": null},
+      "mark": {"type": "text", "align": "center"},
+      "encoding": {
+        "y": {"field": "State", "type": "nominal", "axis": null},
+        "text": {"field": "State", "type": "nominal"}
+      }
+    },
+    {
+      "transform": [{"filter": {"field": "Type", "equal": "Income"}}],
+      "layer": [
         {
-          "field": "Dollars", "type": "quantitative", "title": "Dollars:", "format": "$,.0f"
+          "mark": "bar",
+          "encoding": {
+            "y": {"field": "State", "title": null, "axis": null},
+            "x": {
+              "aggregate": "sum",
+              "field": "Dollars",
+              "title": "Average Weekly Income ($)",
+              "axis": {"format": "s"}
+            },
+            "color": {"field": "Type", "legend": null},
+            "tooltip": [
+              {
+                "field": "Dollars",
+                "type": "quantitative",
+                "title": "Dollars:",
+                "format": "$,.0f"
+              },
+              {"field": "State", "type": "nominal", "title": "State:"}
+            ]
+          }
         },
         {
-          "field": "State", "type": "nominal", "title": "State:"
+          "mark": {"type": "rule", "color": "#B00180"},
+          "encoding": {"x": {"datum": 1474.28}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "yOffset": -90,
+            "xOffset": -79,
+            "color": "#B00180"
+          },
+          "encoding": {
+            "text": {"value": "Average Income"},
+            "x": {"datum": 1474.28}
+          }
         }
-      ]
-
+      ],
+      "config": {"view": {"stroke": null}, "axis": {"grid": false}}
     }
-  }],
-  "config": {
-    "view": {"stroke": null},
-    "axis": {"grid": false}
-  }
+  ]
 }
