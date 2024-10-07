@@ -26,7 +26,8 @@
   ],
   "layer": [
     {
-      "mark": "bar",
+      "mark": {"type": "bar",
+      "color": "#4BA962"},
       "transform": [
         {"calculate": "toString('$' + datum.Income)", "as": "Dollars"}
       ],
@@ -43,7 +44,7 @@
       }
     },
     {
-      "mark": {"type": "rule", "color": "red"},
+      "mark": {"type": "rule", "color": "#B00180"},
       "encoding": {
         "x": {
           "aggregate": "average",
@@ -53,7 +54,7 @@
       }
     },
     {
-      "mark": {"type": "text", "align": "left", "yOffset": -150, "xOffset": 5, "color": "red"},
+      "mark": {"type": "text", "align": "left", "yOffset": -150, "xOffset": 5, "color": "#B00180"},
       "encoding": {
         "text": {"value": "Average Weekly Income"},
         "x": {
