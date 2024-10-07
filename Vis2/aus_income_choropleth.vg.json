@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Income",
+    "title": "Income1",
     "width": "container",
     "height": 400,
     "config": {"style": {"cell": {"stroke": "transparent"}}},
