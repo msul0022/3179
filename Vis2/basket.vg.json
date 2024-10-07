@@ -8,7 +8,6 @@
     "transform": [{
       "filter": {"field": "Type", "equal": "Basket"}
     }],
-    "title": "Basket",
     "mark": "bar",
     "encoding": {
       "y": {
@@ -16,15 +15,23 @@
       },
       "x": {
         "aggregate": "sum", "field": "Dollars",
-        "title": "Dollars",
+        "title": "Average Basket of Groceries ($)",
         "axis": {"format": "s"},
         "sort": "descending"
       },
       "color": {
         "field": "Type",
-        "scale": {"range": ["#675193", "#ca8861"]},
+        "scale": {"range": ["#675193", "#4BA962"]},
         "legend": null
-      }
+      },
+      "tooltip": [
+        {
+          "field": "Dollars", "type": "quantitative", "title": "Dollars:", "format": "$,.2f"
+        },
+        {
+          "field": "State", "type": "nominal", "title": "State:"
+        }
+      ]
     }
   }, {
     "width": 20,
@@ -41,7 +48,6 @@
     "transform": [{
       "filter": {"field": "Type", "equal": "Income"}
     }],
-    "title": "Income",
     "mark": "bar",
     "encoding": {
       "y": {
@@ -50,13 +56,23 @@
       },
       "x": {
         "aggregate": "sum", "field": "Dollars",
-        "title": "Dollars",
+        "title": "Average Weekly Income ($)",
         "axis": {"format": "s"}
       },
       "color": {
         "field": "Type",
         "legend": null
-      }
+      },
+
+      "tooltip": [
+        {
+          "field": "Dollars", "type": "quantitative", "title": "Dollars:", "format": "$,.0f"
+        },
+        {
+          "field": "State", "type": "nominal", "title": "State:"
+        }
+      ]
+
     }
   }],
   "config": {
