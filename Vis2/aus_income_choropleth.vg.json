@@ -3,6 +3,7 @@
     "title": "Income",
     "width": "container",
     "height": 400,
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
     "params":[
       {
         "name": "year_selection",
@@ -36,7 +37,7 @@
     ],
     
     "mark": {"type": "geoshape"},
-    
+
     "encoding": {
       "fill": {
         "field": "INCOME",
@@ -48,13 +49,13 @@
       
       "tooltip": [
         {
-          "field": "properties.name", "type": "nominal", "title": "STATE"
+          "field": "properties.name", "type": "nominal", "title": "State"
         },
         {
-          "field": "INCOME", "type": "quantitative"
+          "field": "INCOME", "type": "quantitative", "title": "Income", "format": "$,.2f"
         },
         {
-          "field": "YEAR", "type": "quantitative"
+          "field": "YEAR", "type": "quantitative", "title": "Year"
         }
       ]
     }
