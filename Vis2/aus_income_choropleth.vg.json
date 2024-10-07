@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Income1",
+    "title": "Income",
     "width": "container",
     "height": 400,
     "config": {"style": {"cell": {"stroke": "transparent"}}},
@@ -52,7 +52,7 @@
           "field": "properties.name", "type": "nominal", "title": "State"
         },
         {
-          "field": "INCOME", "type": "quantitative", "title": "Income", "format": "$,.2f"
+          "field": "INCOME", "type": "quantitative", "title": "Income", "format": "$,.0f"
         },
         {
           "field": "YEAR", "type": "quantitative", "title": "Year"
