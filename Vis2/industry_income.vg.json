@@ -61,7 +61,7 @@
         "x": {
           "aggregate": "average",
           "field": "AverageIncome",
-          "type": "quantitative",
+          "type": "quantitative"
         }
       }
     }
