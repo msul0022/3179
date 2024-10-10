@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Comparison pyramid of basket price and income.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/petrol_income.csv"
+  },
+  "params": [
+    {
+      "name": "year_selection",
+      "value": 2023,
+      "bind": {
+        "input": "select",
+        "options": [2020, 2021, 2022, 2023, 2024],
+        "name": "Select Year: "
+      }
+    }
+  ],
+  "spacing": 0,
+  "hconcat": [
+    {
+      "transform": [
+        {
+          "calculate": "datum.Dollars*50",
+          "as": "tank"
+        },
+        {"filter": {"field": "Type", "equal": "Petrol"}},
+        {"filter": "datum['Year'] == year_selection"},
+        {
+          "joinaggregate": [
+            {"op": "mean", "field": "Dollars", "as": "AveragePetrol"}
+          ]
+        },
+        {
+          "calculate": "datum.AveragePetrol*50", "as": "AverageTank"
+        }
+      ],
+      "title": {"text": {"expr": "'Petrol income graph for ' + year_selection"}},
+
+      "layer": [
+        {
+          "mark": {"type": "bar"},
+          "encoding": {
+            "y": {"field": "State", "axis": null},
+            "x": {
+              "aggregate": "sum",
+              "field": "tank",
+              "title": "Average Petrol Price (cents/litre)",
+              "axis": {"format": "s"},
+              "sort": "descending"
+            },
+            "color": {
+              "field": "Type",
+              "scale": {"range": ["#4BA962", "#FFD200"]},
+              "legend": null
+            },
+            "tooltip": [
+              {
+                "field": "Dollars",
+                "type": "quantitative",
+                "title": "Dollars:",
+                "format": "$,.2f"
+              },
+              {
+                "field": "State", 
+                "type": "nominal", 
+                "title": "State"
+              },
+              {
+                "field": "Year", 
+                "type": "quantitative", 
+                "title": "Year"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {"type": "rule", "color": "#B00180"},
+          "encoding": {"x": {"field": "AverageTank", "type": "quantitative"}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "yOffset": -90,
+            "xOffset": 0,
+            "color": "#B00180"
+          },
+          "encoding": {
+            "text": {"value": "Average Tank"},
+            "x": {"field": "AverageTank", "type": "quantitative"}
+          }
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "view": {"stroke": null},
+      "mark": {"type": "text", "align": "center"},
+      "encoding": {
+        "y": {"field": "State", "type": "nominal", "axis": null},
+        "text": {"field": "State", "type": "nominal"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": {"field": "Type", "equal": "Income"}},
+        {"filter": "datum['Year'] == year_selection"},
+        {
+          "joinaggregate": [
+            {"op": "mean", "field": "Dollars", "as": "AverageIncome"}
+          ]
+        }
+      ],
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "y": {"field": "State", "title": null, "axis": null},
+            "x": {
+              "aggregate": "sum",
+              "field": "Dollars",
+              "title": "Average Weekly Income ($)",
+              "axis": {"format": "s"}
+            },
+            "color": {"field": "Type", "legend": null},
+            "tooltip": [
+              {
+                "field": "Dollars",
+                "type": "quantitative",
+                "title": "Dollars:",
+                "format": "$,.0f"
+              },
+              {
+                "field": "State", 
+                "type": "nominal", 
+                "title": "State"
+              },
+              {
+                "field": "Year", 
+                "type": "quantitative", 
+                "title": "Year"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {"type": "rule", "color": "#B00180"},
+          "encoding": {"x": {"field": "AverageIncome", "type": "quantitative"}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "yOffset": -90,
+            "xOffset": -79,
+            "color": "#B00180"
+          },
+          "encoding": {
+            "text": {"value": "Average Income"},
+            "x": {"field": "AverageIncome", "type": "quantitative"}
+          }
+        }
+      ],
+      "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+    }
+  ]
+}
