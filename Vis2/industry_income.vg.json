@@ -6,11 +6,9 @@
       "name": "year_selection",
       "value": 2023,
       "bind": {
-        "input": "range",
-        "min": 2020,
-        "max": 2024,
-        "step": 1,
-        "name": "Year: "
+        "input": "select",
+        "options": [2020, 2021, 2022, 2023, 2024],
+        "name": "Select Year: "
       }
     }
   ],
