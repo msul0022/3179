@@ -1,7 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%2010%20HW/aus_industry_income.csv"},
-  "params":[
+  "data": {
+    "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%2010%20HW/aus_industry_income.csv"
+  },
+  "params": [
     {
       "name": "year_selection",
       "value": 2023,
@@ -15,29 +17,24 @@
   "transform": [
     {"filter": "datum['Year'] == year_selection"},
     {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "Income",
-        "as": "AverageIncome"
-      }]
+      "joinaggregate": [
+        {"op": "mean", "field": "Income", "as": "AverageIncome"}
+      ]
     }
   ],
   "layer": [
     {
-      "mark": {"type": "bar",
-      "color": "#4BA962"},
+      "mark": {"type": "bar", "color": "#4BA962"},
       "transform": [
         {"calculate": "toString('$' + datum.Income)", "as": "Dollars"}
       ],
       "encoding": {
-        "x": {
-          "field": "Income", "type": "quantitative",
-          "title": "Income"
-        },
-        "y": {"field": "Industry", "type": "ordinal"},
+        "x": {"field": "Income", "type": "quantitative", "title": "Weekly Income"},
+        "y": {"field": "Industry", "type": "ordinal", "sort": "-x"},
         "tooltip": [
-              {"field": "Dollars", "type": "nominal"},
-              {"field": "Industry", "type": "ordinal"}
+          {"field": "Dollars", "type": "nominal"},
+          {"field": "Industry", "type": "ordinal"},
+          {"field": "Year", "type": "quantitative"}
         ]
       }
     },
@@ -47,18 +44,24 @@
         "x": {
           "aggregate": "average",
           "field": "AverageIncome",
-          "type": "quantitative"
+          "type": "quantitative",
         }
       }
     },
     {
-      "mark": {"type": "text", "align": "left", "yOffset": -150, "xOffset": 5, "color": "#B00180"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "yOffset": 150,
+        "xOffset": 5,
+        "color": "#B00180"
+      },
       "encoding": {
         "text": {"value": "Average Weekly Income"},
         "x": {
           "aggregate": "average",
           "field": "AverageIncome",
-          "type": "quantitative"
+          "type": "quantitative",
         }
       }
     }
