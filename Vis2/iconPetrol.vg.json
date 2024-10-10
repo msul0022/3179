@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A Wilkinson Dot Plot",
+  "config": {"view": {"stroke": null}},
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/PetrolProportion.csv"
+  },
+  "transform": [{
+  },
+  {"filter": "datum['Year'] == 2023"}
+  ],
+  "mark": {
+  	"type": "image",
+    "url": "https://github.com/msul0022/3179/blob/main/Vis2/PetrolPump.png?raw=true",
+    "aspect": false,
+  	"opacity": 1
+  },
+  "encoding": {
+    "y": {"field": "State", "type": "ordinal", "sort": {"field": "Proportion", "order":"descending"}},
+    "size": {"field": "Proportion", "type": "quantitative", "range": [4, 7], "legend": null}
+  }
+}
