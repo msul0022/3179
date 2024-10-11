@@ -14,6 +14,7 @@
       }
     }
   ],
+  "title": {"text": {"expr": "'Average Weekly Income Earned by Industry for ' + year_selection"}},
   "transform": [
     {"filter": "datum['Year'] == year_selection"},
     {
@@ -29,7 +30,11 @@
         {"calculate": "toString('$' + datum.Income)", "as": "Dollars"}
       ],
       "encoding": {
-        "x": {"field": "Income", "type": "quantitative", "title": "Weekly Income"},
+        "x": {
+          "field": "Income",
+          "type": "quantitative",
+          "title": "Weekly Income"
+        },
         "y": {"field": "Industry", "type": "ordinal", "sort": "-x"},
         "tooltip": [
           {"field": "Dollars", "type": "nominal"},
