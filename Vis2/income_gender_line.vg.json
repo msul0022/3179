@@ -29,7 +29,7 @@
   ],
   "encoding": {
     "x": {"field": "Date", "type": "temporal"},
-    "y": {"field": "Income", "type": "quantitative"},
+    "y": {"field": "Income", "type": "quantitative", "scale":{"zero":false}},
     "color": {
       "field": "Sex",
       "type": "nominal",
