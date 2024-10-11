@@ -2,41 +2,38 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A bar chart with negative values. We can hide the axis domain line, and instead use a conditional grid color to draw a zero baseline.",
   "width": "container",
-  "data": { "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/age.csv"
+  "data": {
+    "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/age.csv"
   },
-  
   "params": [
     {
       "name": "choose_type",
-      "value": ["Full-time"],
+      "value": ["Fulltime"],
       "bind": {
         "input": "select",
-        "options": [
-          ["Full-time"],
-          ["Part-time"]
-        ],
-        "labels": ["Full-time", "Part-time"],
+        "options": [["Fulltime"], ["Parttime"]],
+        "labels": ["Fulltime", "Parttime"],
         "name": "Type of Work: "
       }
     }
   ],
-
+  "title": {"text": {"expr": "'Average Weekly Income Earned by Age for ' + choose_type + ' Workers'"}},
   "mark": "bar",
   "transform": [
     {"filter": "datum['Work_Type'] == choose_type"},
     {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "Weekly_Income",
-        "as": "avg_income"
-      }]
+      "joinaggregate": [
+        {"op": "mean", "field": "Weekly_Income", "as": "avg_income"}
+      ]
     },
     {"calculate": "datum.Weekly_Income-datum.avg_income", "as": "difference"}
   ],
   "encoding": {
     "x": {
-      "field": "Age", "type": "nominal",
+      "field": "Age",
+      "type": "nominal",
       "axis": {
+        "title": "Age Group",
         "domain": false,
         "ticks": false,
         "labelAngle": 0,
@@ -44,8 +41,10 @@
       }
     },
     "y": {
-      "field": "difference", "type": "quantitative",
+      "field": "difference",
+      "type": "quantitative",
       "axis": {
+        "title": "Difference from Average",
         "gridColor": {
           "condition": {"test": "datum.value === 0", "value": "black"},
           "value": "#ddd"
@@ -53,16 +52,17 @@
       }
     },
     "color": {
-      "condition": {"test": "datum['difference'] > 0", "value": "#4BA962"}, "value": "#CC2031"
+      "condition": {"test": "datum['difference'] > 0", "value": "#4BA962"},
+      "value": "#CC2031"
     },
-
     "tooltip": [
-        {
-          "field": "difference", "type": "quantitative", "title": "Difference from Average:", "format": ".2f"
-        },
-        {
-          "field": "Age", "type": "nominal", "title": "Age Range:"
-        }
-      ]
+      {
+        "field": "difference",
+        "type": "quantitative",
+        "title": "Difference from Average:",
+        "format": "$,.0f"
+      },
+      {"field": "Age", "type": "nominal", "title": "Age Range:"}
+    ]
   }
 }
