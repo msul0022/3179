@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Income",
+  "title": {"text": {"expr": "'Average Weekly Income for ' + year_selection"}},
   "width": "container",
   "height": 400,
   "config": {"style": {"cell": {"stroke": "transparent"}}},
