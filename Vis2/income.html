@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    
+    <title>Australian Average Weekly Income</title>
+
+    <!-- importing pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- my CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+    
+</head>
+
+<body>
+    
+    <div class="page">
+    
+        <h1 style="text-align:center">
+            Australian Weekly Income
+        </h1>
+
+        <h2>Income by State</h2>
+        
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <div id="choropleth" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-2">
+                <p>The average weekly income earned in Australia changes based on state. <br><br> In 2024, workers in Tasmania earned the lowest average 
+                    weekly salary in the country but had the second highest average cost for a basket of groceries. <br><br> The cost of a basket of groceries 
+                    in the Northern Territory is around $10 greater than the next most expensive state.</p>
+                <br>
+                <div class id="petrol" class="vis-container"></div>
+            </div>
+        </div>
+
+        <h2>Income by Industry</h2>
+        
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <div id="bar" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-2">
+                <p>The graph on the left shows that average weekly salaries in the mining industry are much greater than any other industry, earning 
+                    almost $600 more than the next highest salary.</p>
+            </div>
+        </div>
+
+        <h2>Income by Gender and Age</h2>
+        
+        <div>
+            <div class="newspaper">
+                Text paragraph about gender. <br> Text paragraph about age.
+            </div>
+        </div>
+        
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <div id="line" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-2">
+                <div id="age_bar" class="vis-container"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Milly Sullivan 2024 | FIT3179 - Data Visualisation 2</p>
+    </div>
+
+    <script type="text/javascript">
+
+        var vg_1 = "aus_income_choropleth.vg.json";
+        vegaEmbed("#choropleth", vg_1).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_2 = "industry_income.vg.json";
+        vegaEmbed("#bar", vg_2).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_3 = "petrol_icon_bar.vg.json";
+        vegaEmbed("#petrol", vg_3).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_4 = "age.vg.json";
+        vegaEmbed("#age_bar", vg_4).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var vg_5 = "income_gender_line.vg.json";
+        vegaEmbed("#line", vg_5).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        
+    </script>
+    
+</body>
+
+</html>
