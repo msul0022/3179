@@ -40,6 +40,16 @@
       "layer": [
         {
           "mark": {"type": "geoshape"},
+          "params": [
+            {
+              "name": "loc_select",
+              "select": {
+                "type": "point",
+                "fields": ["STATE"],
+                "encodings": ["description"]
+              }
+            }
+          ],
           "encoding": {
             "fill": {
               "field": "INCOME",
@@ -102,9 +112,9 @@
       ],
       "encoding": {
         "y": {
-          "field": "State",
+          "field": "StateAbbv",
           "type": "ordinal",
-          "sort": {"field": "Proportion", "order": "descending"},
+          "sort": {"field": "IncomeDifference", "order": "descending"},
           "axis": {
             "domain": false,
             "grid": false,
@@ -120,12 +130,7 @@
           "title": {
             "text": {"expr": "'Average Weekly Income (' + year_selection + ')'"}
           },
-          "mark": {
-            "type": "point",
-            "color": "green",
-            "shape": "arrow",
-            "opacity": 1
-          },
+          "mark": {"type": "point", "shape": "arrow"},
           "encoding": {
             "size": {
               "field": "AbsoluteDifference",
@@ -139,6 +144,13 @@
                 "value": "#4BA962"
               },
               "value": "#CC2031"
+            },
+            "opacity": {
+              "condition": [
+                {"test": "datum.STATE == loc_select.STATE", "value": 1},
+                {"param": "loc_select", "empty": true, "value": 1}
+              ],
+              "value": 0.2
             },
             "angle": {
               "condition": {
@@ -157,6 +169,13 @@
               "field": "IncomeDifference",
               "type": "quantitative",
               "format": "$,.0f"
+            },
+            "opacity": {
+              "condition": [
+                {"test": "datum.STATE == loc_select.STATE", "value": 1},
+                {"param": "loc_select", "empty": true, "value": 1}
+              ],
+              "value": 0.2
             }
           }
         },
@@ -171,6 +190,13 @@
               "legend": null,
               "scale": {"range": [10, 1500]}
             },
+            "opacity": {
+              "condition": [
+                {"test": "datum.STATE == loc_select.STATE", "value": 1},
+                {"param": "loc_select", "empty": true, "value": 1}
+              ],
+              "value": 0.2
+            },
             "tooltip": [
               {
                 "field": "Proportion",
@@ -178,7 +204,7 @@
                 "title": "Percent of Weekly Income:",
                 "format": ".2f"
               },
-              {"field": "State", "type": "nominal", "title": "State:"},
+              {"field": "STATE", "type": "nominal", "title": "State"},
               {"field": "Year", "type": "quantitative", "title": "Year:"}
             ],
             "x": {"value": 100}
@@ -187,13 +213,21 @@
             "type": "point",
             "color": "#FFD200",
             "shape": "m 5.390625,0 -0.3125,0.359375 0.59375,0.546875 c 0.018105,0.018106 0.0428,0.042346 0.0625,0.0625 l -0.125,0.140625 C 5.409266,1.3094841 5.5528445,1.5684666 5.625,1.640625 L 6,2.015625 6,5 c 0,0.5 -0.196068,0.5 -0.25,0.5 C 5.696068,5.5 5.5,5.5 5.5,5 l 0,-2 c 0,-0.6404542 -0.5,-1 -0.5,-2 L 4.5,1 C 4.5,1.4483482 4.2876365,0.5 4,0.5 L 1,0.5 C 0.7003785,0.5 0.5,0.7123633 0.5,1 l 0,6 4,0 0,-4.5 c 0,0 0.5,0 0.5,0.5 l 0,2 c 0,1 0.619849,1 0.75,1 0.137826,0 0.75,0 0.75,-1 L 6.5,1.5 C 6.5,1 6.3569915,1.0048919 6.1875,0.734375 L 5.390625,0 z M 1,1.5 4,1.5 4,3 1,3 1,1.5 z",
-            "opacity": 1,
             "yOffset": -15
           }
         },
         {
           "mark": {"type": "text", "xOffset": -155},
-          "encoding": {"text": {"value": {"expr": "datum.Proportion + '%'"}}}
+          "encoding": {
+            "text": {"value": {"expr": "datum.Proportion + '%'"}},
+            "opacity": {
+              "condition": [
+                {"test": "datum.STATE == loc_select.STATE", "value": 1},
+                {"param": "loc_select", "empty": true, "value": 1}
+              ],
+              "value": 0.2
+            }
+          }
         }
       ]
     }
