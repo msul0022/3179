@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"view": {"stroke": null}},
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/PetrolProportion.csv"
+  },
+  "transform": [
+    {"filter": "datum['Year'] == 2023"},
+    {
+      "joinaggregate": [
+        {"op": "mean", "field": "Income", "as": "AverageIncome"}
+      ]
+    },
+    {
+      "calculate": "datum.Income - datum.AverageIncome",
+      "as": "IncomeDifference"
+    },
+    {"calculate": "abs(datum.IncomeDifference)", "as": "AbsoluteDifference"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "State",
+      "type": "ordinal",
+      "sort": {"field": "Proportion", "order": "descending"},
+      "axis": {"domain": false, "grid": false, "ticks": false, "offset": 20}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "color": "green",
+        "size": 1,
+        "shape": "arrow",
+        "opacity": 1
+      },
+      "encoding": {
+        "size": {
+          "field": "AbsoluteDifference",
+          "type": "quantitative",
+          "legend": null
+        },
+        "color": {
+          "condition": {
+            "test": "datum['IncomeDifference'] > 0",
+            "value": "#4BA962"
+          },
+          "value": "#CC2031"
+        },
+        "angle": {
+          "condition": {"test": "datum['IncomeDifference'] > 0", "value": 0},
+          "value": 180
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "xOffset": 50,
+        "align": "left"},
+      "encoding": {
+        "text": {"field": "IncomeDifference", "type": "quantitative", "format": "$,.0f"}
+      }
+    }
+  ]
+}
