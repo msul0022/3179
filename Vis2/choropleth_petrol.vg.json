@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "params": [
+    {
+      "name": "year_selection",
+      "value": 2023,
+      "bind": {
+        "input": "select",
+        "options": [2020, 2021, 2022, 2023, 2024],
+        "name": "Select Year: "
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "width": "container",
+      "height": 400,
+      "title": {
+        "text": {"expr": "'Average Weekly Income (' + year_selection + ')'"}
+      },
+      "projection": {"type": "equirectangular"},
+      "data": {
+        "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%209%20HW/clean_income.csv"
+      },
+      "transform": [
+        {
+          "lookup": "STATE",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%209%20HW/aus.topojson",
+              "format": {"type": "topojson", "feature": "2"}
+            },
+            "key": "properties.name",
+            "fields": ["properties", "type", "geometry"]
+          }
+        },
+        {"filter": "datum.YEAR == year_selection"}
+      ],
+      "layer": [
+        {
+          "mark": {"type": "geoshape"},
+          "encoding": {
+            "fill": {
+              "field": "INCOME",
+              "type": "quantitative",
+              "title": "Average Weekly Income",
+              "legend": {"orient": "top-left"},
+              "scale": {"scheme": "greens"}
+            },
+            "tooltip": [
+              {"field": "properties.name", "type": "nominal", "title": "State"},
+              {
+                "field": "INCOME",
+                "type": "quantitative",
+                "title": "Income",
+                "format": "$,.0f"
+              },
+              {"field": "YEAR", "type": "quantitative", "title": "Year"}
+            ]
+          }
+        },
+        {
+          "mark": "text",
+          "encoding": {
+            "text": {"field": "properties.abbrev", "type": "nominal"},
+            "longitude": {
+              "field": "properties.longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "properties.latitude",
+              "type": "quantitative"
+            },
+            "size": {"value": 10},
+            "opacity": {"value": 1}
+          }
+        }
+      ]
+    },
+    {
+      "width": "container",
+      "height": 400,
+      "data": {
+        "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/PetrolProportion.csv"
+      },
+      "transform": [
+        {
+          "joinaggregate": [
+            {"op": "mean", "field": "Income", "as": "AverageIncome"}
+          ]
+        },
+        {
+          "calculate": "datum.Income - datum.AverageIncome",
+          "as": "IncomeDifference"
+        },
+        {
+          "calculate": "abs(datum.IncomeDifference)",
+          "as": "AbsoluteDifference"
+        },
+        {"filter": "datum.Year == year_selection"}
+      ],
+      "encoding": {
+        "y": {
+          "field": "State",
+          "type": "ordinal",
+          "sort": {"field": "Proportion", "order": "descending"},
+          "axis": {
+            "domain": false,
+            "grid": false,
+            "ticks": false,
+            "offset": -50,
+            "title": null,
+            "labelAlign": "center"
+          }
+        }
+      },
+      "layer": [
+        {
+          "title": {
+            "text": {"expr": "'Average Weekly Income (' + year_selection + ')'"}
+          },
+          "mark": {
+            "type": "point",
+            "color": "green",
+            "shape": "arrow",
+            "opacity": 1
+          },
+          "encoding": {
+            "size": {
+              "field": "AbsoluteDifference",
+              "type": "quantitative",
+              "legend": null,
+              "scale": {"range": [10, 1500]}
+            },
+            "color": {
+              "condition": {
+                "test": "datum['IncomeDifference'] > 0",
+                "value": "#4BA962"
+              },
+              "value": "#CC2031"
+            },
+            "angle": {
+              "condition": {
+                "test": "datum['IncomeDifference'] > 0",
+                "value": 0
+              },
+              "value": 180
+            },
+            "x": {"value": 0}
+          }
+        },
+        {
+          "mark": {"type": "text", "xOffset": -250, "align": "right"},
+          "encoding": {
+            "text": {
+              "field": "IncomeDifference",
+              "type": "quantitative",
+              "format": "$,.0f"
+            }
+          }
+        },
+        {
+          "title": {
+            "text": {"expr": "'Average Weekly Income (' + year_selection + ')'"}
+          },
+          "encoding": {
+            "size": {
+              "field": "Proportion",
+              "type": "quantitative",
+              "legend": null,
+              "scale": {"range": [10, 1500]}
+            },
+            "tooltip": [
+              {
+                "field": "Proportion",
+                "type": "quantitative",
+                "title": "Percent of Weekly Income:",
+                "format": ".2f"
+              },
+              {"field": "State", "type": "nominal", "title": "State:"},
+              {"field": "Year", "type": "quantitative", "title": "Year:"}
+            ],
+            "x": {"value": 100}
+          },
+          "mark": {
+            "type": "point",
+            "color": "#FFD200",
+            "shape": "m 5.390625,0 -0.3125,0.359375 0.59375,0.546875 c 0.018105,0.018106 0.0428,0.042346 0.0625,0.0625 l -0.125,0.140625 C 5.409266,1.3094841 5.5528445,1.5684666 5.625,1.640625 L 6,2.015625 6,5 c 0,0.5 -0.196068,0.5 -0.25,0.5 C 5.696068,5.5 5.5,5.5 5.5,5 l 0,-2 c 0,-0.6404542 -0.5,-1 -0.5,-2 L 4.5,1 C 4.5,1.4483482 4.2876365,0.5 4,0.5 L 1,0.5 C 0.7003785,0.5 0.5,0.7123633 0.5,1 l 0,6 4,0 0,-4.5 c 0,0 0.5,0 0.5,0.5 l 0,2 c 0,1 0.619849,1 0.75,1 0.137826,0 0.75,0 0.75,-1 L 6.5,1.5 C 6.5,1 6.3569915,1.0048919 6.1875,0.734375 L 5.390625,0 z M 1,1.5 4,1.5 4,3 1,3 1,1.5 z",
+            "opacity": 1,
+            "yOffset": -15
+          }
+        },
+        {
+          "mark": {"type": "text", "xOffset": -155},
+          "encoding": {"text": {"value": {"expr": "datum.Proportion + '%'"}}}
+        }
+      ]
+    }
+  ]
+}
