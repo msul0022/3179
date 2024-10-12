@@ -33,24 +33,38 @@
     },
     {"filter": "datum.YEAR == year_selection"}
   ],
-  "mark": {"type": "geoshape"},
-  "encoding": {
-    "fill": {
-      "field": "INCOME",
-      "type": "quantitative",
-      "title": "Average Weekly Income",
-      "legend": {"orient": "top-left"},
-      "scale": {"scheme": "greens"}
+  "layer": [
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "fill": {
+          "field": "INCOME",
+          "type": "quantitative",
+          "title": "Average Weekly Income",
+          "legend": {"orient": "top-left"},
+          "scale": {"scheme": "greens"}
+        },
+        "tooltip": [
+          {"field": "properties.name", "type": "nominal", "title": "State"},
+          {
+            "field": "INCOME",
+            "type": "quantitative",
+            "title": "Income",
+            "format": "$,.0f"
+          },
+          {"field": "YEAR", "type": "quantitative", "title": "Year"}
+        ]
+      }
     },
-    "tooltip": [
-      {"field": "properties.name", "type": "nominal", "title": "State"},
-      {
-        "field": "INCOME",
-        "type": "quantitative",
-        "title": "Income",
-        "format": "$,.0f"
-      },
-      {"field": "YEAR", "type": "quantitative", "title": "Year"}
-    ]
-  }
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {"field": "properties.abbrev", "type": "nominal"},
+        "longitude": {"field": "properties.longitude", "type": "quantitative"},
+        "latitude": {"field": "properties.latitude", "type": "quantitative"},
+        "size": {"value": 10},
+        "opacity": {"value": 1}
+      }
+    }
+  ]
 }
