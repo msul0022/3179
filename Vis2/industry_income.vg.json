@@ -3,6 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Week%2010%20HW/aus_industry_income.csv"
   },
+  "config": {"view": {"stroke": "transparent"}},
   "params": [
     {
       "name": "year_selection",
@@ -59,7 +60,7 @@
         "color": "#B00180"
       },
       "encoding": {
-        "text": {"value": "Average Weekly Income"},
+        "text": {"value": "All Industry's Average"},
         "x": {
           "aggregate": "average",
           "field": "AverageIncome",
