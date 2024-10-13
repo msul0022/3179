@@ -26,7 +26,7 @@
     "point": true
   },
   "encoding": {
-    "x": {"field": "Date", "type": "temporal", "title": "Year"},
+    "x": {"field": "Date", "type": "temporal", "title": "Year", "axis": {"grid": false}},
     "y": {"field": "Income", "type": "quantitative", "scale":{"zero":false}, "title": "Weekly Income ($)"},
     "color": {
       "field": "Sex",
