@@ -24,20 +24,17 @@
     "type": "line",
     "point": true
   },
-  "transform": [
-    {"calculate": "toString('$' + datum.Income)", "as": "Dollars"}
-  ],
   "encoding": {
-    "x": {"field": "Date", "type": "temporal"},
-    "y": {"field": "Income", "type": "quantitative", "scale":{"zero":false}},
+    "x": {"field": "Date", "type": "temporal", "title": "Year"},
+    "y": {"field": "Income", "type": "quantitative", "scale":{"zero":false}, "title": "Weekly Income ($)"},
     "color": {
       "field": "Sex",
       "type": "nominal",
-      "scale": {"domain": ["Male", "Female", "All"], "range": ["#1A3B8E", "#F08080", "#B00180"]}
+      "scale": {"domain": ["Male", "Female", "Average"], "range": ["#1A3B8E", "#F08080", "#B00180"]}
     },
     "tooltip": [
       {"field": "Date", "type": "temporal"},
-      {"field": "Dollars", "type": "nominal"}
+      {"field": "Income", "type": "nominal", "format": "$,.0f"}
     ]
   }
 }
