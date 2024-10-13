@@ -65,7 +65,8 @@
           "aggregate": "average",
           "field": "AverageIncome",
           "type": "quantitative"
-        }
+        },
+        "tooltip": {"field": "AverageIncome", "type": "quantitative","format": "$,.0f"}
       }
     }
   ]
