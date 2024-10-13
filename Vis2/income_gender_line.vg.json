@@ -2,9 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Average Weekly Income by Gender",
   "width": "container",
-  "data": {"url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/income_by_gender.csv"},
-  "padding": {"right":20},
-
+  "data": {
+    "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/income_by_gender.csv"
+  },
+  "padding": {"right": 20},
   "config": {
     "legend": {
       "labelFont": "calibri",
@@ -18,24 +19,39 @@
       "labelFontSize": 12,
       "titleFontSize": 12
     },
-    "mark": {"font": "calibri"}
+    "mark": {"font": "calibri"},
+    "view": {"stroke": "transparent"}
   },
-  
-  "mark": {
-    "type": "line",
-    "point": true
-  },
+  "mark": {"type": "line", "point": true},
   "encoding": {
-    "x": {"field": "Date", "type": "temporal", "title": "Year", "axis": {"grid": false}},
-    "y": {"field": "Income", "type": "quantitative", "scale":{"zero":false}, "title": "Weekly Income ($)"},
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "Income",
+      "type": "quantitative",
+      "scale": {"zero": false},
+      "title": "Weekly Income ($)"
+    },
     "color": {
       "field": "Sex",
       "type": "nominal",
-      "scale": {"domain": ["Male", "Female", "All People"], "range": ["#1A3B8E", "#F08080", "#B00180"]}
+      "scale": {
+        "domain": ["Male", "Female", "All People"],
+        "range": ["#1A3B8E", "#F08080", "#B00180"]
+      }
     },
     "tooltip": [
       {"field": "Sex", "type": "nominal", "title": "Gender"},
-      {"field": "Income", "type": "quantitative", "format": "$,.0f", "title": "Income"},
+      {
+        "field": "Income",
+        "type": "quantitative",
+        "format": "$,.0f",
+        "title": "Income"
+      },
       {"field": "Date", "type": "temporal", "title": "Date"}
     ]
   }
