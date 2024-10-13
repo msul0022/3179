@@ -32,7 +32,9 @@ h2 {
 h3 {
     font-size: 1em;
     font-family: "Verdana";
-    color: black;
+    color: #0072B2;
+    background-color: #F9F5EB;
+    padding: 5px;
 
 }
 
