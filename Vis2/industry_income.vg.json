@@ -34,8 +34,8 @@
         },
         "y": {"field": "Industry", "type": "ordinal", "sort": "-x"},
         "tooltip": [
-          {"field": "Income", "type": "quantitative", "format": "$,.0f"},
           {"field": "Industry", "type": "ordinal"},
+          {"field": "Income", "type": "quantitative", "format": "$,.0f"},
           {"field": "Year", "type": "quantitative"}
         ]
       }
