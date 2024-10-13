@@ -4,6 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/age.csv"
   },
+  "padding": {"left": 10},
   "params": [
     {
       "name": "choose_type",
