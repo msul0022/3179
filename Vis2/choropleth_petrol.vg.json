@@ -1,6 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "padding": {"right":80},
   "params": [
     {
       "name": "year_selection",
