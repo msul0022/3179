@@ -3,7 +3,8 @@
   "title": "Average Weekly Income by Gender",
   "width": "container",
   "data": {"url": "https://raw.githubusercontent.com/msul0022/3179/refs/heads/main/Vis2/income_by_gender.csv"},
-  
+  "padding": {"right":10},
+
   "config": {
     "legend": {
       "labelFont": "calibri",
