@@ -33,7 +33,7 @@
         "x": {
           "field": "Income",
           "type": "quantitative",
-          "title": "Weekly Income"
+          "title": "Weekly Income ($)"
         },
         "y": {"field": "Industry", "type": "ordinal", "sort": "-x"},
         "tooltip": [
