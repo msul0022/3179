@@ -8,11 +8,11 @@
   "params": [
     {
       "name": "choose_type",
-      "value": ["Fulltime"],
+      "value": ["Full-time"],
       "bind": {
         "input": "select",
-        "options": [["Fulltime"], ["Parttime"]],
-        "labels": ["Fulltime", "Parttime"],
+        "options": [["Full-time"], ["Part-time"]],
+        "labels": ["Full-time", "Part-time"],
         "name": "Type of Work: "
       }
     }
