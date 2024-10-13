@@ -117,22 +117,22 @@
     <script type="text/javascript">
 
         var vg_1 = "choropleth_petrol.vg.json";
-        vegaEmbed("#choropleth", vg_1).then(function(result) {
+        vegaEmbed("#choropleth", vg_1, {"actions": false }).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
         var vg_2 = "industry_income.vg.json";
-        vegaEmbed("#bar", vg_2).then(function(result) {
+        vegaEmbed("#bar", vg_2, {"actions": false }).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
         var vg_4 = "age.vg.json";
-        vegaEmbed("#age_bar", vg_4).then(function(result) {
+        vegaEmbed("#age_bar", vg_4, {"actions": false }).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
         var vg_5 = "income_gender_line.vg.json";
-        vegaEmbed("#line", vg_5).then(function(result) {
+        vegaEmbed("#line", vg_5, {"actions": false }).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
