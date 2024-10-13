@@ -59,10 +59,10 @@
       {
         "field": "difference",
         "type": "quantitative",
-        "title": "Difference from Average:",
+        "title": "Difference from Average",
         "format": "$,.0f"
       },
-      {"field": "Age", "type": "nominal", "title": "Age Range:"}
+      {"field": "Age", "type": "nominal", "title": "Age Range"}
     ]
   }
 }
