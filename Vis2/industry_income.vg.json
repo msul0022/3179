@@ -26,9 +26,6 @@
   "layer": [
     {
       "mark": {"type": "bar", "color": "#4BA962"},
-      "transform": [
-        {"calculate": "toString('$' + datum.Income)", "as": "Dollars"}
-      ],
       "encoding": {
         "x": {
           "field": "Income",
@@ -37,7 +34,7 @@
         },
         "y": {"field": "Industry", "type": "ordinal", "sort": "-x"},
         "tooltip": [
-          {"field": "Dollars", "type": "nominal"},
+          {"field": "Income", "type": "quantitative", "format": "$,.0f"},
           {"field": "Industry", "type": "ordinal"},
           {"field": "Year", "type": "quantitative"}
         ]
