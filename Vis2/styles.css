@@ -76,3 +76,7 @@ h3 {
 .endnotes {
     font-size: 8px;
 }
+
+html {
+    font-family: Verdana, sans-serif;
+}
